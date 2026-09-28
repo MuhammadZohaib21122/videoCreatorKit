@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d0e12" />
+  <meta name="description" content="CreatorKit: thirteen useful YouTube creator tools in one beautiful, private workspace." />
+  <title>CreatorKit — Your YouTube creation studio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body data-theme="dark">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><span class="brand-triangle"></span></span><span class="brand-word">creator<span>kit</span><span class="brand-dot">.</span></span></div>
+      <div class="sidebar-scroll">
+        <div class="nav-caption">WORKSPACE</div>
+        <nav class="side-nav" aria-label="Workspace">
+          <button class="nav-item is-active" type="button" data-nav="home"><span class="icon" data-icon="grid"></span><span>Discover tools</span><span class="nav-tiny">13</span></button>
+          <button class="nav-item" type="button" data-nav="favorites"><span class="icon" data-icon="heart"></span><span>My favorites</span></button>
+          <button class="nav-item" type="button" data-nav="recent"><span class="icon" data-icon="clock"></span><span>Recent activity</span></button>
+        </nav>
+        <div class="nav-caption category-label">EXPLORE CATEGORIES</div>
+        <nav class="side-nav" aria-label="Categories">
+          <button class="nav-item" type="button" data-category="Ideas & writing"><span class="icon" data-icon="sparkles"></span><span>Ideas & writing</span></button>
+          <button class="nav-item" type="button" data-category="SEO & growth"><span class="icon" data-icon="trending"></span><span>SEO & growth</span></button>
+          <button class="nav-item" type="button" data-category="Visuals & media"><span class="icon" data-icon="image"></span><span>Visuals & media</span></button>
+          <button class="nav-item" type="button" data-category="Analytics"><span class="icon" data-icon="chart"></span><span>Analytics</span></button>
+        </nav>
+        <div class="sidebar-callout"><div class="callout-glyph"><span class="icon" data-icon="zap"></span></div><p>Small tools.<br /><strong>Big creator energy.</strong></p><span>Everything in one studio.</span></div>
+      </div>
+      <div class="sidebar-bottom"><span class="online-dot"></span><span>Ready when inspiration hits</span><span class="version">v1.0</span></div>
+    </aside>
+
+    <div class="page-area">
+      <header class="topbar"><div class="topbar-left"><button type="button" class="mobile-menu icon-button" id="menuBtn" aria-label="Open menu"><span class="icon" data-icon="menu"></span></button><div class="breadcrumb">Workspace <span>/</span> <strong id="currentView">Discover</strong></div></div><div class="topbar-actions"><div class="search-shell"><span class="icon" data-icon="search"></span><input id="toolSearch" type="search" placeholder="Search creator tools..." aria-label="Search creator tools" autocomplete="off" /><kbd>/</kbd></div><button type="button" class="icon-button theme-toggle" id="themeToggle" aria-label="Switch theme" title="Switch theme"><span class="icon" data-icon="moon"></span></button><button type="button" class="top-cta" id="launchBtn"><span class="icon" data-icon="sparkles"></span><span>Start creating</span></button></div></header>
+      <main class="main-content">
+        <section class="hero" aria-labelledby="heroTitle"><div class="hero-noise"></div><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> THE ALL-IN-ONE CREATOR WORKSPACE <span class="eyebrow-line"></span> FREE TO USE</div><h1 id="heroTitle">Great videos start<br />with <em>better ideas.</em></h1><p>Brainstorm, write, optimize, and grow. Your favorite YouTube creator tools — together in one seriously good-looking studio.</p><div class="hero-buttons"><button class="primary-button" type="button" id="heroExplore">Explore all tools <span class="icon" data-icon="arrow-right"></span></button><button class="secondary-button" type="button" id="heroIdea">Surprise me <span class="icon" data-icon="shuffle"></span></button></div><div class="hero-foot"><span class="small-avatars"><b>Y</b><b>▶</b><b>★</b></span><span>Made for your next <strong>big upload</strong></span></div></div><div class="hero-art" aria-hidden="true"><div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div><div class="art-card"><div class="art-top"><span class="art-lights"><i></i><i></i><i></i></span><span>YOUR CREATIVE STUDIO</span><span class="art-menu">•••</span></div><div class="art-thumbnail"><div class="art-sun"></div><span class="art-sticker">NEW VIDEO</span><div class="art-thumb-title">MAKE<br />IT <span>BIG.</span></div><div class="art-play"><span class="icon" data-icon="play"></span></div><div class="art-wave wave-1"></div><div class="art-wave wave-2"></div></div><div class="art-card-foot"><span class="art-avatar">C</span><div><strong>Your next viral idea</strong><small>CreatorKit Studio · Just now</small></div><span class="art-views">↗ 2.4M</span></div></div><div class="floating-badge floating-one"><span class="icon" data-icon="trending"></span><span>Growth unlocked</span></div><div class="floating-badge floating-two"><span class="icon" data-icon="sparkles"></span><span>Make something great</span></div></div></section>
+        <section class="overview" aria-label="Workspace overview"><div class="overview-heading"><span class="icon" data-icon="layers"></span><span>YOUR CREATOR STACK</span></div><div class="overview-stats"><div><strong>13</strong><span>creator tools</span></div><div><strong>04</strong><span>categories</span></div><div><strong>Free</strong><span>no account needed</span></div></div><span class="overview-note"><span class="icon" data-icon="shield"></span> Runs in your browser</span></section>
+        <section class="tools-section" id="toolsSection" aria-labelledby="toolsHeading"><div class="section-heading"><div><div class="section-kicker"><span class="section-line"></span> HANDPICKED FOR CREATORS</div><h2 id="toolsHeading">Your creative toolkit<span class="red-period">.</span></h2><p id="sectionSubtitle">Everything you need to make your next upload count.</p></div><div class="count-badge" id="toolCount">13 TOOLS</div></div><div class="filter-row" id="filterRow" role="group" aria-label="Filter tools"><button type="button" class="filter-pill is-active" data-filter="All">All tools <span>13</span></button><button type="button" class="filter-pill" data-filter="Ideas & writing">Ideas & writing</button><button type="button" class="filter-pill" data-filter="SEO & growth">SEO & growth</button><button type="button" class="filter-pill" data-filter="Visuals & media">Visuals & media</button><button type="button" class="filter-pill" data-filter="Analytics">Analytics</button></div><div class="tools-grid" id="toolsGrid"></div><div class="empty-state" id="emptyState" hidden><span class="icon" data-icon="search"></span><h3>No tools found</h3><p>Try another search or switch back to all tools.</p><button type="button" class="secondary-button" id="clearFilters">Show all tools</button></div></section>
+        <section class="future-banner"><div class="future-icon"><span class="icon" data-icon="chart"></span></div><div><span class="future-overline">WHAT'S NEXT</span><h2>Your channel. One beautiful dashboard.</h2><p>Channel connection, real-time performance, and personalized insights are on the roadmap. The current toolkit works without signing in.</p></div><span class="coming-soon">COMING SOON <span class="icon" data-icon="arrow-up-right"></span></span></section>
+        <footer class="footer"><span class="footer-brand">creator<span>kit</span><b>.</b></span><span>Made for creators, not algorithms.</span><span>Independent toolkit · Not affiliated with YouTube</span></footer>
+      </main>
+    </div>
+  </div>
+  <div class="mobile-scrim" id="mobileScrim" hidden></div>
+  <div class="modal-backdrop" id="toolBackdrop" hidden><section class="tool-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-header"><div class="modal-title-wrap"><div class="modal-icon" id="modalIcon"></div><div><span class="modal-eyebrow" id="modalCategory">CREATOR TOOL</span><h2 id="modalTitle">Tool</h2></div></div><button type="button" class="icon-button close-button" id="closeModal" aria-label="Close tool"><span class="icon" data-icon="x"></span></button></div><div class="modal-body"><div class="form-panel"><p class="modal-description" id="modalDescription"></p><form id="toolForm" novalidate><div id="formFields"></div><button type="submit" class="primary-button generate-button" id="generateBtn">Create result <span class="icon" data-icon="arrow-right"></span></button></form><p class="modal-hint"><span class="icon" data-icon="lock"></span><span id="modalHint">Template-based tools run locally. No AI key or sign-up needed.</span></p></div><div class="result-panel"><div class="result-heading"><div><span class="result-kicker">YOUR WORKSPACE</span><h3 id="resultTitle">Your results appear here</h3></div><div class="result-controls"><button class="icon-button" type="button" id="regenerateBtn" title="Generate another version" aria-label="Generate another version" hidden><span class="icon" data-icon="refresh"></span></button><button class="icon-button" type="button" id="copyAllBtn" title="Copy all results" aria-label="Copy all results" hidden><span class="icon" data-icon="copy"></span></button></div></div><div class="result-content" id="resultContent"><div class="result-placeholder"><div class="placeholder-orbit"><span class="icon" data-icon="sparkles"></span></div><strong>Your next great idea awaits.</strong><p>Fill in a few details on the left to get started.</p></div></div><div class="result-footer" id="resultFooter">YOUR CREATOR KIT IS READY ✳</div></div></div></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span class="icon" data-icon="check"></span><span id="toastMessage">Copied!</span></div>
+</body>
+</html>
